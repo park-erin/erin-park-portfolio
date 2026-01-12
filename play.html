@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  // Add click handler to all .clickable images
+  document.querySelectorAll('.clickable').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  // Close modal when X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+});
+</script>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="projects.html">work</a></li>
+                <li><a class="current" href="play.html">play</a></li>
+                <li><a href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="imageModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <section>
+        <h1>for kdvs</h1>
+
+        <p>
+            Keeping freeform radio culture alive at the longest running college radio station in the world. I’ve curated music for a weekly radio show, photographed events, and contributed to PR campaigns and a quarterly zine with my some of my favorite people in the world.
+        </p>
+
+        <h2>OPERATION: RESTORE MAXIMUM FREEDOM</h2>
+
+        <p>
+            I initiated a collaboration with our award-winning student-run media agency Aggie Studios to cover KDVS’ 60th annual music festival, a community gathering featuring Sacramento’s vibrant indie music scene. That’s me reporting and interviewing!
+        </p>
+
+        <div class="youtubeEmbed">
+                <iframe width="854px" height="480px" src="https://www.youtube.com/embed/wUnvSZnozow?si=DxMs71ex0opPDRiF" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h2>A History of KDVS</h2>
+
+        <p>
+            For KDVS' 60th anniversary fundraiser, I collaborated on a community-loved fundraising video produced in just one week, contributing on-screen and behind the scenes with improvised ideas and creative input that reflected the team’s genuine passion.
+        </p>
+
+        <div class="youtubeEmbed">
+            <iframe width="854px" height="480px" src="https://www.youtube-nocookie.com/embed/jD7o71TQ0Y0?si=5r7CnTduVu9bx9dO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h2>Illustrations</h2>
+
+        <p>
+            Designs published in KDViations, the station’s quarterly zine, and created for merchandise sold for station fundraising. 
+        </p>
+
+        <div id="kdvsIllustration">
+            <img class="clickable" src="images/play/kdviationsFool.PNG" alt="The Fool Tarot Card">
+            <img class="clickable" src="images/play/kdviationsSwords.PNG" alt="Three of Swords Tarot Card">
+            <img class="clickable" src="images/play/kdviationsCups.PNG" alt="King of Cups Tarot Card">
+        </div>
+        <img src="images/play/kdvsBunnyMerch.png" alt="Radio Bunnies Merch Design">
+        </section>
+
+        <section>
+        <h1>The Ghost in the Machine</h1>
+
+        <p>
+            An experimental visual novel exploring how designed spaces can influence the way people interact with and perceive their experiences. Inspired by ETA Hoffman’s 1816 short story “The Sandman”, the site acts as a Turing test of sorts, in which the user interacts with the webpage to eventually determine whether they are perceiving a human or a robot. 
+        </p>
+
+        <img src="images/play/ghostInMachine1.png" alt="The Ghost in the Machine Screencap 1">
+        <img src="images/play/ghostInMachine2.png" alt="The Ghost in the Machine Screencap 2">
+        <img src="images/play/ghostInMachine3.png" alt="The Ghost in the Machine Screencap 3">
+        </section>
+
+        <section>
+        <h1>PLAY & PEACE</h1>
+
+        <p>
+            My work in design often reflects my experience as a cognitive science student exploring a new field that blurs the lines between human and machine, and a social science researcher investigating how expanding boundaries in technology impact how humans interact with each other. With this art book, I wanted to explore the concept of “play” and its relationship to human nature from an alternative perspective— play that evolves into gambles, risks, manipulation, and performance. The visual direction was inspired by early computer graphics and computer vision models, drawing a connection between technological innovation and a fight for survival. 
+        </p>
+
+        <img src="images/play/play&peace.png" alt="Life is a game of dice and a metaphorical street brawl.">
+        <img src="images/play/play&peace2.png" alt="WAR GAMES!">
+        <img src="images/play/play&peace3.png" alt="Thrill of the Risk">
+        <img src="images/play/play&peace4.png" alt="God does not play dice with the universe!">
+
+        </section>
+
+        <div class="seeMoreButton">
+            <p>Thanks for reading!</p>
+            <a href="projects.html">View Additional Projects</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC Davis Honors</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  // Add click handler to all .clickable images
+  document.querySelectorAll('.clickable').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  // Close modal when X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+});
+</script>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="current" href="projects.html">work</a></li>
+                <li><a href="play.html">play</a></li>
+                <li><a href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+
+            <div id="imageModal" class="modal">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+            <!-- Article Header -->
+
+            <section class="articleHeader">
+                <h1>UC Davis Honors</h1>
+                <h2>Recruitment Campaign</h2>
+                <div>
+                    <div>
+                    <img class="icon" src="images/clockicon.png" alt="time icon">
+                    <p>Timeline: January 2024 - April 2024</p>
+                    </div>
+                    <div>
+                    <img class="icon" src="images/toolicon.png" alt="tool icon">
+                    <p>Tools: Qualtrics, Adobe Illustrator, Adobe Premiere Pro, Canon EOS 80D</p>
+                    </div>  
+                </div>
+                <img id="hero" src="images/uhp/uhpCover.JPG" alt="Aggie Day with Gunrock">
+            </section>
+
+            <!-- Article Content -->
+
+            <section>
+                <h6>[CONTEXT]</h6>
+                <p>
+                    The University Honors Program (UHP) at UC Davis aims to connect high achieving students with experiential learning opportunities, with an emphasis on research, service, and leadership. 
+                </p>
+                <p>
+                    UHP’s biggest recruitment event is at Aggie Day, UC Davis’ open house for newly admitted first year students. Our presentation averages ~250 attendees annually, and first year offers have the highest conversion rate out of our three entry pathways.                 
+                </p>
+                <h6>[ROLE]</h6>
+                <p>
+                    As the program’s Communications Coordinator, I work closely with program leadership to lead marketing and outreach strategy, integrating student feedback with the program’s mission to recruit incoming, on-campus, and transfer Honors students.                 </p>
+            </section>
+
+            <section>
+                <blockquote>
+                    <img class="icon" src="images/ideaicon.png" alt="lightbulb icon">
+                    <p>
+                        How might we create a engaging publicity video promoting UHP’s <b>mission</b>, <b>values</b>, and <b>benefits</b> in a way that resonates with UC Davis’ <b>diverse prospective student class</b>?
+                    </p>
+                </blockquote>
+            </section>
+
+
+            <section>
+                <h6>[RESEARCH]</h6>
+                <p>
+                    I wanted to examine what kind of messaging has persisted, and what real student experiences were like through a survey distributed to all currently enrolled Honors students:
+                </p>
+                <ul>
+                    <li>
+                        Why did you <b>choose to join</b> UHP?
+                    </li>
+                    <li>
+                        How has UHP <b>supported</b> your <b>academic and career goals</b>?
+                    </li>
+                    <li>
+                        What would you have liked to know about UHP <b>before joining</b>?
+                    </li>
+                    <li>
+                        What kind of <b>attitude</b> do you notice towards Honors students at UC Davis?
+                    </li>
+                    <li>
+                        What <b>advice</b> do you have for first year Honors students?
+                    </li>
+                </ul>
+
+                <p>
+                    Out of <b>71 respondents</b>, here’s what stood out: 
+                </p>
+
+                <div id="studentQuotes">
+                    <p>
+                        “I think the honors program has the stigma of <b>very pretentious students</b>, however, from everyone that I've encountered, everyone has been <b>super nice</b> and <b>always willing to help.</b>”
+                    </p>
+                    <p>
+                        “UHP staff are very <b>accommodating</b> and <b>understanding of your academic situation</b>. I've gotten great advice from the advisors here that want the best for you and your situation.”
+                    </p>
+                    <p>
+                        “Being an honors student means pushing yourself to go beyond the minimum in your education. Honors classes allow you to <b>challenge yourself</b> and <b>engage in smaller discussions</b>.”
+                    </p>
+
+                </div>
+            </section>
+
+            <section>
+                <h6>[KEY MESSAGING]</h6>
+                
+                <ol>
+                    <li>
+                        UHP has <b>practical benefits</b> for students such as priority registration, supportive staff, and a tight knit community, as well as opening doors to exclusive opportunities that build <b>real world skills</b> and <b>foster personal intellectual interests</b>.
+                    </li>
+                    <li>
+                        UHP’s dedicated staff of advisors and peer mentors are <b>supportive and flexible</b>, helping students meet their goals within their <b>unique circumstances</b>.
+                    </li>
+                    <li>
+                        Despite being a prestigious program, UHP <b>does not limit students</b> by adding cumbersome requirements or being a high pressure environment— rather, encourages students to pursue their academic interests within an <b>uplifting community</b>.
+                    </li>
+                    <li>
+                        UHP represents a <b>diverse group of students</b> from different cultural, socioeconomic, and intellectual backgrounds, and is committed to <b>combating the traditionally exclusive nature</b> of Honors in higher education.
+                    </li>
+                </ol>
+            </section>
+            
+            <section>
+                <h6>
+                    [STUDENT FEATURES]
+                </h6>
+                <img src="images/uhp/studentFeatures.png" alt="Student Features">
+
+                <div class="youtubeEmbed">
+                <iframe width="854px" height="480px" src="https://www.youtube.com/embed/6tORyM3l6Cs?si=dm1CkatPz_WQM85o&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </section>
+
+            <section>
+                <h6>
+                    [PRINT DESIGN]
+                </h6>
+                <div id="printDesign">
+
+                    <div>
+                    <img class="clickable" src="images/uhp/writingCenterWorkshop.png" alt="Writing Center Workshop Flyer">
+                    <img class="clickable" src="images/uhp/springBanquet.png" alt="2024 Spring Banquet Invitation">
+                    </div>
+                    <div>
+                    <img class="clickable" src="images/uhp/fallKickoff.png" alt="Fall Kickoff Instagram Promotion">
+                    <img class="clickable" src="images/uhp/uhpBonfire.png" alt="Bonfire Social Instagram Promotion">
+                    </div>
+                    <div>
+                    <img class="clickable" src="images/uhp/springBanquetProgram.png" alt="2024 Spring Banquet Program">
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="twoColumn">
+
+                    <div>
+                        <h6>[IMPACT]</h6>
+                
+                        <ul>
+                        <li>
+                            <b>17% increase</b> in first year students accepting an offer in latest recruitment cycle 
+                        </li>
+                        <li>
+                            <b>25% increase</b> in on-campus applications in latest recruitment cycle, a <b>total 65% increase</b> over two cycles
+                        </li>
+                        <li>
+                            Recognized on <a href="https://ue.ucdavis.edu/news/what-makes-university-honors-program-special" target="_blank" rel="noopener noreferrer">UC Davis Undergraduate Education News Site</a>
+                        </li>
+                        </ul>
+                    </div>
+                
+                        <img src="images/uhp/uhpCloser.png" alt="Hello UHP!">
+
+                </div>
+            </section>
+            <div class="seeMoreButton">
+                <p>Thanks for reading!</p>
+                <a href="projects.html">View Additional Projects</a>
+            </div>
+            
+
+        </article>
+        
+        
+    </main>
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Interactive</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
+
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  // Add click handler to all .clickable images
+  document.querySelectorAll('.clickable').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  // Close modal when X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+});
+</script>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="current" href="projects.html">work</a></li>
+                <li><a href="play.html">play</a></li>
+                <li><a href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="imageModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        <article>
+
+            <!-- Article Header -->
+
+            <section class="articleHeader">
+                <h1>Design Interactive</h1>
+                <h2>Brand Redesign</h2>
+                <div>
+                    <div>
+                    <img class="icon" src="images/clockicon.png" alt="time icon">
+                    <p>Timeline: June 2025 - September 2025</p>
+                    </div>
+                    <div>
+                    <img class="icon" src="images/toolicon.png" alt="tool icon">
+                    <p>Tools: Figma, FigJam, Airtable, Instagram Analytics, User Interviews</p>
+                    </div>  
+                </div>
+                <img id="hero" src="images/diRebrand/diCover.jpg" alt="Design Interactive Board">
+            </section>
+
+            <!-- Article Content -->
+
+            <section>
+                <h6>[CONTEXT]</h6>
+                <p>
+                    Design Interactive (DI) is UC Davis’ first human-centered design organization, founded out of a growing demand on campus for UI/UX education and hands-on project opportunities for students exploring the field.
+                </p>
+                <p>
+                    Our program had been struggling with student retention as a result of a contradictory reputation: too unapproachable to feel inviting, yet not prestigious enough to inspire confidence.
+                </p>
+                <h6>[ROLE]</h6>
+                <p>
+                    As the team lead for DI’s marketing team, I defined the overall strategy and positioning of our organization’s messaging, delegating a clear timeline for the project to a team of four graphic designers and content creators, and contributing assets as necessary to communicate my vision and support my team. 
+                </p>
+            </section>
+
+            <section>
+                <h6>[RESEARCH]</h6>
+                <p>
+                    While our program was a popular option for students first exploring UX, our key weakness was retention– <b>students were leaving our program for other tech organizations perceived to be more prestigious or aspirational.</b>
+                </p>
+                <img src="images/diRebrand/journeyMap.png" alt="User Journey Mapping">
+
+
+                <div id="oldBrandExamples">
+                        <img class="clickable" id="slackFlyer" src="images/diRebrand/recruitmentFlyer.png" alt="Fall 2024 Recruitment Flyer">
+                        <img class="clickable" id="recapPost" src="images/diRebrand/fellowshipRecap.png" alt="Spring 2025 Fellowship">
+                        <img class="clickable" id="recruitmentPost" src="images/diRebrand/recruitmentPost.png" alt="Fall 2023 Recruitment">
+                    <div class="text">
+                        <p>
+                            <b>Existing Visual Identity</b>
+                        </p>
+                        <p>
+                            Warm, creative visuals emphasizing a welcoming and fun community. 
+                        </p>
+                        <p>
+                            <b>Perception</b>
+                        </p>
+                        <p>
+                            Vintage and juvenile, conveying a sense of DIY crafts rather than UI/UX design. 
+                        </p>
+                    </div>
+                
+                </div>
+    
+            </section>
+
+            <section>
+                <blockquote>
+                    <img class="icon" src="images/ideaicon.png" alt="lightbulb icon">
+                    <p>
+                        How might we adjust our visual identity and messaging to <b>attract motivated designers</b>, while reflecting our mission-driven values of <b>inclusivity</b>, <b>interdisciplinarity</b>, and <b>community</b>?
+                    </p>
+                </blockquote>
+            </section>
+
+            <section>
+                <h6>[SOLUTION]</h6>
+                <table rules ="rows">
+                    <tr>
+                        <td>
+                            Old visual identity felt outdated & childish, and did not clearly communicate UI/UX & professional development focus.
+                        </td>
+                        <td>
+                            <i class="fa-regular fa-hand-point-right"></i>
+                        </td>
+                        <td>
+                            Refresh visual identity to better align with greater tech space on campus while retaining strong visibility and recognizability.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Professional development student orgs have a reputation of exclusivity or competitiveness that discourages beginners from getting involved.
+                        </td>
+                        <td>
+                            <i class="fa-regular fa-hand-point-right"></i>
+                        </td>
+                        <td>
+                            Align copywriting with a welcoming, warm brand voice.
+                            <br><br>
+                            Showcase authentic student stories through increased videography and photography in content.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Despite advertising a strong community, DI had difficulty staying connected to its large alumni network.                        
+                        </td>
+                        <td>
+                            <i class="fa-regular fa-hand-point-right"></i>
+                        </td>
+                        <td>
+                            Target our different audience segments with tailored content through multiple channels.
+                            <br><br>
+                            Increase emphasis on community building events connecting students with alumni and mentors. 
+                        </td>
+                    </tr>
+                </table>
+
+                <img src="images/diRebrand/audienceSegment.png" alt="Audience Segmentation">
+                
+                <div class="twoColumn">
+
+                <img src="images/diRebrand/newbrand.png" alt="New Brand Standards">
+
+                <div>
+                    <p>
+                        <b>Updated Visual Identity</b>
+                    </p>
+                    <ol>
+                        <li>
+                            Assets inspired by digital design interfaces like bounding boxes and cursor chats.
+                        </li>
+                     <li>
+                            Gradient, layered graphics better align with current industry trends and add movement + depth.
+                        </li>
+                        <li>
+                            Increased use of photography to promote community.
+                        </li>
+                    </ol>
+                </div>
+                
+                </div>
+                
+                <div id="rebrandSample">
+
+                <img class="clickable" src="images/diRebrand/joinBoard.png" alt="Board Recruitment Graphic">  
+                <img class="clickable" src="images/diRebrand/musicFinder.png" alt="Cohort Team Intros">
+                <img class="clickable" src="images/diRebrand/rolesInUX.png" alt="UX Panel Advert">
+
+                </div>
+            </section>
+
+            <section>
+                <div class="twoColumn">
+
+                    <div>
+                        <h6>[IMPACT]</h6>
+                
+                        <ul>
+                        <li>
+                            <b>40% increase</b> in applications to flagship Cohort program since last recruitment cycle, a <b>150% increase</b> over two cycles
+                        </li>
+                        <li>
+                            <b>3 x more</b> industry mentor led workshops than last quarter
+                        </li>
+                        <li>
+                            <b>120+</b> Fellowship program participants
+                        </li>
+                        </ul>
+                    </div>
+                
+                        <img src="images/diRebrand/diCloser.png" alt="Love, DI.">
+
+                </div>
+            </section>
+            <div class="seeMoreButton">
+                <p>Thanks for reading!</p>
+                <a href="projects.html">View Additional Projects</a>
+            </div>
+            
+
+        </article>
+        
+        
+    </main>
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>

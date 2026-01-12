@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteable</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="current" href="projects.html">work</a></li>
+                <li><a href="play.html">play</a></li>
+                <li><a href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+
+            <!-- Article Header -->
+
+            <section class="articleHeader">
+                <h1>Noteable</h1>
+                <h2>Product Design</h2>
+                <div>
+                    <div>
+                    <img class="icon" src="images/clockicon.png" alt="time icon">
+                    <p>Timeline: September 2024 - December 2024</p>
+                    </div>
+                    <div>
+                    <img class="icon" src="images/toolicon.png" alt="tool icon">
+                    <p>Tools: Figma, FigJam, User Testing, User Interviews</p>
+                    </div>  
+                </div>
+                <img id="hero" src="images/noteable/noteablehero.png" alt="Noteable Cover">
+            </section>
+
+            <!-- Article Content -->
+
+            <section>
+                <h6>[CONTEXT]</h6>
+                <p>
+                    As a designer in Design Interactive’s Fall 2024 Cohort, I worked with a team to design an original note taking app during a 7-week design sprint. Our product was motivated by the lack of an existing, flexible, and customizable note-taking application that caters to the diverse needs of users, such as for work, school, or day-to-day life. Our goal was to design a note-taking application that allows users to capture and organize their thoughts quickly and effortlessly, no matter where they are.                
+                </p>
+                <h6>[ROLE]</h6>
+                <p>
+                   As the only designer with a background in marketing and social science research, I played a crucial role in planning and executing user research. I optimized our research by carefully editing survey and user interview questions, and visualizing data to be readable for both technical and non-technical stakeholders.
+                </p>
+            </section>
+
+            <section>
+                <blockquote>
+                    <img class="icon" src="images/ideaicon.png" alt="lightbulb icon">
+                    <p>
+                        How might we design a note-taking application that allows users to <b>capture and organize</b> their thoughts <b>quickly and effortlessly</b>, no matter where they are?
+                    </p>
+                </blockquote>
+            </section>
+
+
+            <section>
+                <h6>[RESEARCH]</h6>
+                <p>
+                    Key Needs: Our application needed to have the ability to import a <b>variety of media formats</b> (such as photos, lecture slides, PDF’s), as well as <b>customizable organization options</b>, and be <b>convenient and free to use</b>.
+                </p>
+                <p>
+                    Key Pain Points: A <b>cluttered and distracting</b> interface, poor<b> media formatting options</b>, and poor <b>organizational customizability</b>.
+                </p>
+
+                <img style="margin-bottom:1em" src="images/noteable/userResearch.png" alt="User Research Summary">
+                <img style="margin-bottom:1em" src="images/noteable/competitiveAnalysis.png" alt="Competitive Analysis of Popular Existing Notetaking Apps">
+
+            </section>
+
+            <section>
+                <h6>[KEY INSIGHTS]</h6>
+                
+                <ol>
+                    <li>
+                        <b>Organization:</b> Users want to organize their notes in a way that makes sense to them individually.
+                    </li>
+                    <li>
+                        <b>Collaboration:</b> Users want to easily communicate their notes with others—this mostly applies to professionals who wish to share timeframes of projects efficiently.
+                    </li>
+                    <li>
+                        <b>Efficiency & Speed:</b> Users want an easy, quick way to take and access notes.
+                    </li>
+                </ol>
+            </section>
+            
+            <section>
+                <h6>
+                    [PROTOTYPING & FEEDBACK]
+                </h6>
+                <img style="margin-bottom:1em" src="images/noteable/userTesting.png" alt="User Testing Summary">
+                <img style="margin-bottom:1em" src="images/noteable/userTesting2.png" alt="User Testing Summary">
+
+            </section>
+
+            <section>
+                <h6>
+                    [SOLUTION]
+                </h6>
+                
+                <h4>Onboarding</h4>
+                <ul>
+                    <li>
+                        Create an account to save all your notes in one place
+                    </li>
+                    <li>
+                        Select a profile type for customization suggestions
+                    </li>
+                    <li>
+                        Select which features you want highlighted on your dashboard
+                    </li>
+                    <li>
+                        Keep your notes organized by creating a new dashboard
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/onboarding.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                 <h4>Adding Pins</h4>
+                <ul>
+                    <li>
+                        Customize your dashboard by adding new pins
+                    </li>
+                    <li>
+                        Choose between a variety of options to best suit your notetaking needs
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/addpins.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h4>Switching Dashboards</h4>
+                <ul>
+                    <li>
+                        Log in to access your notes
+                    </li>
+                    <li>
+                        Customizeable pins allow for easy access of important documents, such as flashcards
+                    </li>
+                    <li>
+                        Switch between dashboards using the left sidebar
+                    </li>
+                    <li>
+                        Each dashboard is customized to suit your different needs
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/dashboards.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <h4>Importing Text and Images</h4>
+                <ul>
+                    <li>
+                        Access folders of each dashboard using left sidebar
+                    </li>
+                    <li>
+                        Open existing documents in folders page
+                    </li>
+                    <li>
+                        Import image into document using Grid Edit Mode
+                    </li>
+                    <li>
+                        Format image next to text with a variety of layout grid options
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/import.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <h4>Creating New Documents</h4>
+                <ul>
+                    <li>
+                        Switch between column view and list view to best suit your needs
+                    </li>
+                    <li>
+                        Click “Create a new document” to select either a blank document or an existing template
+                    </li>
+                    <li>
+                        By creating a flash card template, you can efficiently take notes on vocabulary and definitions
+                    </li>
+                    <li>
+                        Viewing mode for flash cards is authentic to studying with paper flash cards with the convenience of digital notes
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/createdoc.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h4>Event & Task Calendars</h4>
+                <ul>
+                    <li>
+                        Access your calendars using the left sidebar
+                    </li>
+                    <li>
+                        Click on a time slot to schedule a new event
+                    </li>
+                    <li>
+                        Select a category to color code your events into groups
+                    </li>
+                    <li>
+                        Have multiple calendars to keep each area of your life organized
+                    </li>
+                </ul>
+                <video width=100% height=auto controls>
+                    <source src="images/noteable/calendar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </section>
+
+            <section>
+                    <h6>[REFLECTIONS]</h6>
+
+                    <p>Notable was one of five project teams participating in Design Interactive’s Fall 2024 Cohort. On Final Presentation Day, where all teams presented their work to a judging panel of UX Designers in industry, our team was recognized for standout Strategic Design and Communication.</p>
+
+                    <p>Next Steps:</p>
+                
+                    <ul>
+                        <li>
+                            Responsive to tablet and mobile views
+                        </li>
+                        <li>
+                            Dark mode, for further customization and accessibility
+                        </li>
+                    </ul>
+                
+                    <img src="images/noteable/goTeam.JPG" alt="Team Noteable">
+            </section>
+
+            <div class="seeMoreButton">
+                <p>Thanks for reading!</p>
+                <a href="projects.html">View Additional Projects</a>
+            </div>
+            
+
+        </article>
+        
+        
+    </main>
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>

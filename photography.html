@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photography</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  // Add click handler to all .clickable images
+  document.querySelectorAll('.clickable').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  // Close modal when X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+});
+</script>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="projects.html">work</a></li>
+                <li><a href="play.html">play</a></li>
+                <li><a class="current" href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Photography</h1>
+        <p>
+            The biggest purchase I’ve ever made was my beloved Canon EOS R8. Since then, my camera goes everywhere I go, capturing the beautiful people and places I get to see exactly as they appear through my eyes. 
+        </p>
+
+        <div id="imageModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <div class="photoGrid">
+            <div>
+                <img class="clickable" src="images/photography/isabel.jpg" alt="Isabel at the Death Star">
+                <img class="clickable" src="images/photography/picnic.JPG" alt="Audie and KG at the Palace of Fine Arts">
+                <img class="clickable" src="images/photography/hilary.jpg" alt="Cheers with Hilary!">
+                <img class="clickable" src="images/photography/bates.JPG" alt="Celebrating Mexican Independence Day at the Bates Motel">
+            </div>
+
+            <div>
+                <img class="clickable" src="images/photography/dinil.JPG" alt="Dinil smiles at Point Bonita">
+                <img class="clickable" src="images/photography/goldengate.JPG" alt="The Golden Gate on a Sunny Day">
+                <img class="clickable" src="images/photography/music.JPG" alt="Dinil plays the drums at the MOPOP in Seattle">
+                <img class="clickable" src="images/photography/pinball.JPG" alt="Pinball Machines at a bar in Seattle">
+            </div>
+        </div>
+
+        <h2>for uc davis honors</h2>
+        <p>
+            Building a vibrant visual archive of moments of connectedness to highlight real student experiences within the UC Davis University Honors Program. 
+        </p>
+
+        <div class="photoGrid">
+            <div>
+                <img class="clickable" src="images/photography/bonfire.JPG" alt="Roasting marshmallows with UHP at our annual bonfire">
+                <img class="clickable" src="images/photography/aggieday.JPG" alt="Getting to know UHP at Aggie Day">
+            </div>
+
+            <div>
+                <img class="clickable" src="images/photography/meetingnewfriends.JPG" alt="Hello new UHP friends!">
+                <img class="clickable" src="images/photography/uhProm.JPG" alt="Enjoying U-H-Prom!">
+            </div>
+        </div>
+
+        <h2>for design interactive</h2>
+
+        <p>
+            Capturing students’ design journeys and growth to enhance digital storytelling across marketing channels, recruiting fresh faces and industry mentorship. 
+        </p>
+
+        <div class="photoGrid">
+            <div>
+                <img class="clickable" src="images/photography/presenting.jpg" alt="Alyse and her team present their design challenge project">
+                <img class="clickable" src="images/photography/brainstorming.jpg" alt="A group brainstorms together during a Fellowship team meeting">
+            </div>
+
+            <div>
+                <img class="clickable" src="images/photography/thankyoumentors.jpg" alt="Last year's board receives flowers for their hard work">
+                <img class="clickable" src="images/photography/fellowshippresentationnight.jpg" alt="The exciting final presentation night for our Fellows!">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+    
+</body>
+</html>
