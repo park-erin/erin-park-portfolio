@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baroqautomata</title>
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
+
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="responsivestyles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  // Add click handler to all .clickable images
+  document.querySelectorAll('.clickable').forEach(img => {
+    img.onclick = function() {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+    }
+  });
+  
+  // Close modal when X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+});
+</script>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="current" href="projects.html">work</a></li>
+                <li><a href="play.html">play</a></li>
+                <li><a href="photography.html">photo</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="imageModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        <article>
+
+            <!-- Article Header -->
+
+            <section class="articleHeader">
+                <h1>Baroqautomata</h1>
+                <h2>Brand Identity Development</h2>
+                <div>
+                    <div>
+                    <img class="icon" src="images/clockicon.png" alt="time icon">
+                    <p>Timeline: January 2026 - March 2065</p>
+                    </div>
+                    <div>
+                    <img class="icon" src="images/toolicon.png" alt="tool icon">
+                    <p>Tools: Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Miro</p>
+                    </div>  
+                </div>
+                <img id="hero" src="images/baroqautomata/des116_brandbook.png" alt="Baroqautomata Cover">
+            </section>
+
+            <!-- Article Content -->
+
+            <section>
+                <h6>[CONTEXT]</h6>
+                <p>
+                    Baroqautomata is a music festival concept developed for DES 116: Visual Communication Studio at UC Davis. The festival draws inspiration from the rapid progress in technological advancement during the baroque period that led to a distinctive musical sound featuring increased use of manufactured instruments and a characteristic emphasis on ornamentation, exaggeration, and contrast. The design system plays with the tensions between past and future, tradition and innovation, using strong contrasts in color, form, and concept.
+                </p>
+            </section>
+
+            <section>
+                <h6>[BRAND BOOK]</h6>
+                <img src="images/baroqautomata/des116_brandbook2.png" alt="page 2">
+                <img src="images/baroqautomata/des116_brandbook3.png" alt="page 3">
+                <img src="images/baroqautomata/des116_brandbook4.png" alt="page 4">
+                <img src="images/baroqautomata/des116_brandbook5.png" alt="page 5">
+                <img src="images/baroqautomata/des116_brandbook6.png" alt="page 6">
+                <img src="images/baroqautomata/des116_brandbook7.png" alt="page 7">
+                <img src="images/baroqautomata/des116_brandbook8.png" alt="page 8">
+                <img src="images/baroqautomata/des116_brandbook9.png" alt="page 9">
+            </section>
+
+
+            <div class="seeMoreButton">
+                <p>Thanks for reading!</p>
+                <a href="projects.html">View Additional Projects</a>
+            </div>
+            
+        </article>
+        
+        
+    </main>
+    <footer>
+        <div>
+            <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
+        
+            <div class="contact">
+                <div>
+                <img class="icon" src="images/envelopeWhite.png" alt="envelope icon">
+                <a href="mailto:&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank" rel="noopener noreferrer">&#101;&#109;&#112;&#097;&#114;&#107;&#049;&#050;&#048;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+                </div>
+                <div>
+                <img class="icon" src="images/linkWhite.png" alt="link icon">
+                <a href="https://www.linkedin.com/in/erin-park-a44ba2264/" target="_blank" rel="noopener noreferrer">my LinkedIn</a>
+                </div>
+            
+            </div>
+            
+            <div>
+                <p>Thanks for visiting!</p>
+                <p>© 2026 Erin Park</p>
+            </div>    
+        </div>
+        <ul>
+            <li><a href="projects.html">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="photography.html">photo</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
