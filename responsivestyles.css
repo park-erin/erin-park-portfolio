@@ -425,7 +425,7 @@ hr{
   /* Text Styling */
   h1 {
     font-weight: 700;
-    font-size: 5.4vw;
+    font-size: 4vw;
     margin-bottom: 0.5em;
   }
 
@@ -501,6 +501,7 @@ hr{
   h1{
     margin: 0;
     padding-top: 1em;
+    font-size: 5.4vw;
   }
   h3{
     padding-top: 1em;
@@ -576,7 +577,7 @@ hr{
     }
 
     p{
-      font-size: 1.6vw;
+      font-size: 1.3vw;
       line-height: 1.5em;
     }
 
@@ -594,10 +595,10 @@ hr{
     }
 
     ul{
-      font-size: 1.6vw;
+      font-size: 1.3vw;
     }
     ol{
-      font-size: 1.6vw;
+      font-size: 1.3vw;
     }
 
     li{
