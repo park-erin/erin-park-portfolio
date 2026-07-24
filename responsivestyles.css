@@ -493,6 +493,7 @@ hr{
   margin-left: -10vw;
   margin-top: -5.4vw;
   padding-bottom: 5.4vw;
+  cursor: url(images/cursor.png), auto; 
   }
 
   #heroContent{
