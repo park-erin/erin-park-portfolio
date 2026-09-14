@@ -20,35 +20,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
-</head>
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImage');
-  const closeBtn = document.querySelector('.modal-close');
-  
-  // Add click handler to all .clickable images
-  document.querySelectorAll('.clickable').forEach(img => {
-    img.onclick = function() {
-      modal.style.display = 'block';
-      modalImg.src = this.src;
-    }
-  });
-  
-  // Close modal when X is clicked
-  closeBtn.onclick = function() {
-    modal.style.display = 'none';
-  }
-  
-  // Close modal when clicking outside the image
-  modal.onclick = function(e) {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
-  }
-});
-</script>
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
+</head>
 
 <body>
     
@@ -56,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <nav>
             <ul>
                 <li><a class="current" href="index.html">home</a></li>
-                <li><a href="projects.html">work</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="graphics.html">graphics</a></li>
                 <li><a href="play.html">play</a></li>
-                <li><a href="photography.html">photo</a></li>
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>
@@ -75,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div id="heroContent">
                 <h1 id="name">Erin Park</h1>
                 <h3>digital design & strategy</h3> 
-                <img id="mobileBanner" src="images/mobileBanner.png" alt="Erin Headshots"> 
+                <img src="images/mobileBanner.png" alt="Erin Headshots"> 
             </div>
         </section>
 
@@ -112,8 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <article class="block">
                 <img src="images/playhero.png" alt="Play">
-                <h4><u><a href="play.html">Play</a></u></h4>
-                <p>Personal projects and explorations done out of love and for fun.</p>
+                <h4><u><a href="graphics.html">Graphic Design</a></u></h4>
+                <p>Samples of my graphic design work, including both design production and original creative explorations.</p>
             </article>
 
             <article class="block">

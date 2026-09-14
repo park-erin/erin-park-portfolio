@@ -19,44 +19,22 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
-</head>
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImage');
-  const closeBtn = document.querySelector('.modal-close');
-  
-  // Add click handler to all .clickable images
-  document.querySelectorAll('.clickable').forEach(img => {
-    img.onclick = function() {
-      modal.style.display = 'block';
-      modalImg.src = this.src;
-    }
-  });
-  
-  // Close modal when X is clicked
-  closeBtn.onclick = function() {
-    modal.style.display = 'none';
-  }
-  
-  // Close modal when clicking outside the image
-  modal.onclick = function(e) {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
-  }
-});
-</script>
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
+</head>
 
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a class="current" href="projects.html">work</a></li>
+                <li><a class="current" href="projects.html">projects</a></li>
+                <li><a href="graphics.html">graphics</a></li>
                 <li><a href="play.html">play</a></li>
-                <li><a href="photography.html">photo</a></li>
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>

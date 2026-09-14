@@ -184,8 +184,12 @@ footer{
 
 /* hiding images on mobile */
 
-#heroContent #images{
+#heroContent img{
     display: none;
+}
+
+#name{
+  font-size: 3em;
 }
 
 #aboutMe img{
@@ -194,11 +198,6 @@ footer{
 
 #aboutMe .icon{
     display: block;
-}
-
-#mobileBanner{
-  margin-top: 4em;
-  margin-bottom: 2em;
 }
 
 h3{
