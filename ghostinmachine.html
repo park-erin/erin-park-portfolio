@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play</title>
-    
+    <title>The Ghost in the Machine</title>
+
     <!--Normalize CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23226bb.js" crossorigin="anonymous"></script>
 
 
     <!--Stylesheet-->
@@ -25,75 +28,69 @@
 
     <!-- My Script -->
     <script src="script.js" defer></script>
-    
+
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="projects.html">projects</a></li>
+                <li><a class="current" href="projects.html">projects</a></li>
                 <li><a href="graphics.html">graphics</a></li>
-                <li><a class="current" href="play.html">play</a></li>
+                <li><a href="play.html">play</a></li>
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 data-fade>works of love</h1>
-
-        <!-- <div data-fade class="horizontalCard">
-            <img src="#" alt="ghost in the machine">
-
-            <div>
-                <h2><u><a href="ghostinmachine.html">The Ghost in the Machine</a></u></h2>
-                <div class="tags">
-                    <p class="tag">narrative</p>
-                    <p class="tag">interaction</p>
-                </div>
-                <p>A visual novel exploring how the age of AI influences the way we interact with each other.</p>
-            </div>
-        
+        <div id="imageModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImage">
         </div>
+        <article>
 
-        <hr> -->
+            <!-- Article Header -->
 
-        <div data-fade class="horizontalCard">
-            <img src="images/kdvshero.JPEG" alt="KDVS x AggieStudios Crew">
-
-            <div>
-                <h2><u><a href="kdvs.html">KDVS 90.3 FM</a></u></h2>
-                <div class="tags">
-                    <p class="tag">video</p>
-                    <p class="tag">illustration</p>
+            <section class="articleHeader">
+                <h1>The Ghost in the Machine</h1>
+                <h2>A Visual Novel</h2>
+                <div>
+                    <div>
+                    <img class="icon" src="images/clockicon.png" alt="time icon">
+                    <p>Timeline: January 2026 - Jun 2026</p>
+                    </div>
+                    <div>
+                    <img class="icon" src="images/toolicon.png" alt="tool icon">
+                    <p>Tools: Figma, HTML, CSS, JavaScript, Visual Studio Code</p>
+                    </div>  
                 </div>
+                <img id="hero" src="" alt="ghost in the machine">
+            </section>
+
+            <!-- Article Content -->
+
+            <section>
+                <h6>[CONTEXT]</h6>
                 <p>
-                    Keeping freeform radio culture alive at one of the longest running student-run radio stations in the world.
+                    Honors thesis
                 </p>
+            </section>
+
+            <section>
+            </section>
+
+
+            <div class="seeMoreButton">
+                <p>Thanks for reading!</p>
+                <a href="projects.html">View Additional Projects</a>
             </div>
+            
+        </article>
         
-        </div>
-
-        <hr>
-
-        <div data-fade class="horizontalCard">
-            <img src="images/photohero.JPG" alt="my photos">
-
-            <div>
-                <h2><u><a href="photography.html">Photography</a></u></h2>
-                <div class="tags">
-                    <p class="tag">photography</p>
-                </div>
-                <p>
-                    My flicks from both on and off the clock!
-                </p>
-            </div>
         
-        </div>
-
     </main>
-
     <footer>
         <div>
             <img class="footnote" src="images/footer.png" alt="designed + coded with <3 in Davis, CA">
@@ -123,6 +120,5 @@
         </ul>
 
     </footer>
-
 </body>
 </html>

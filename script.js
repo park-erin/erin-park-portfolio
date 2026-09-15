@@ -3,6 +3,25 @@
 
     console.log('loading js')
 
+    // fade in load animation
+    function initTopToBottomFadeIn(elements, staggerMs = 120) {
+        const list = Array.from(elements)
+            .map(el => ({ el, top: el.getBoundingClientRect().top + window.scrollY }))
+            .sort((a, b) => a.top - b.top);
+
+        list.forEach(({ el }, index) => {
+            setTimeout(() => {
+            el.classList.add('is-visible');
+            }, index * staggerMs);
+        });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const targets = document.querySelectorAll('[data-fade]');
+        initTopToBottomFadeIn(targets);
+    });
+
+    //adding the gallery effect
     document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
